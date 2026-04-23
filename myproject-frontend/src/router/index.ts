@@ -42,6 +42,12 @@ const router = createRouter({
           meta: { title: 'AI对话', icon: 'ChatLineRound' }
         },
         {
+          path: 'friends/list',
+          name: 'friends-list',
+          component: () => import('../views/friends/Friends.vue'),
+          meta: { title: '好友列表', icon: 'User' }
+        },
+        {
           path: 'system/user',
           name: 'system-user',
           component: () => import('../views/system/UserManage.vue'),
